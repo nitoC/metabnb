@@ -1,0 +1,70 @@
+$primary:#A02279;
+@import 'https://fonts.googleapis.com/css2?family=Red+Rose&family=Roboto:wght@100&display=swap';
+@import 'home.scss';
+@import 'placesToStay.scss';
+:root{
+  font-family: 'Red Rose', cursive;
+  font-size: 16px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 2.6875rem 2.25rem;
+  align-items: center;
+}
+.topnav{
+  display: flex;
+  gap: 1.75rem;
+}
+.mobile-topnav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  cursor: pointer;
+ .nav__link{
+  padding:1rem;
+  font-size: 12px;
+  cursor: pointer;
+ }
+
+}
+.header__logo{
+  width:14.5625rem;
+  height: 2.25rem;
+}
+.nav__btn{
+  cursor: pointer;
+  background-color: $primary;
+  color: white;
+  padding: .9375rem 1.625rem;
+  border-radius: .625rem;
+}
+@media (max-width:930px) {
+  :root{
+    font-size: 10px;
+  }
+}
+@media (max-width:680px) {
+  .topnav{
+    display:none;
+  }
+  .mobile-topnav{
+    display: flex !important;
+  }
+}
